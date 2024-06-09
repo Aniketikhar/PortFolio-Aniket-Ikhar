@@ -1,0 +1,132 @@
+
+
+.animation {
+    height:60px;
+    overflow:hidden;
+    margin-left: 1rem;
+    margin-top: -25px;
+  }
+  
+  .animation > div > h1 {
+    padding: 0.25rem 0.75rem;
+    height:4.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+    font-size: 40px;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 16s infinite;
+  }
+  
+  
+  @keyframes text-animation {
+      0% {margin-top: 0;}
+      10% {margin-top: 0;}
+      20% {margin-top: -4.80rem;}
+      30% {margin-top: -4.80rem;}
+      40% {margin-top: -10.80rem;}
+      60% {margin-top: -10.80rem;}
+      70% {margin-top: -4.80rem;}
+      80% {margin-top: -4.80rem;}
+      90% {margin-top: 0;}
+      100% {margin-top: 0;}
+  }
+  
+
+
+  .hero-title h1{
+    
+    
+    font-size: 70px;
+    font-weight: 600;
+}
+.hero-title h1 span{
+    
+    background: linear-gradient(221deg,#d40aab,#da0303,#f9581f,#1459f3,#217e93);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 25s ease infinite;
+}
+
+.summary p{
+    text-align: center;
+    width: 60%;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect{
+    padding: 15px 30px;
+    border-radius: 50px;
+    background:  linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.hero-resume{
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.hero-resume a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.hero-connect:hover{
+    border: 2px solid white;
+
+}
+
+.hero-resume:hover{
+    border-color: #B923E1;
+
+}
+
+
+
+@media(max-width:450px){
+
+       .hero-title h1{
+            font-size: 40px;
+       }
+
+       .profession h1 {
+            font-size: 20px !important;
+       }
+
+       .summary p{
+            width: 100%;
+       }
+       
+    .hero-action{
+        font-size: 18px;
+    }
+
+    .hero-connect{
+        padding: 10px 20px;
+    }
+
+    .hero-resume{
+        padding: 10px 20px;
+    }
+
+    .hero-connect:hover{
+        border: 2px solid white;
+}
+
+
+}

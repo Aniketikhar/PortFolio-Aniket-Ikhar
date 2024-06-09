@@ -11,7 +11,17 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             ANIKET
           </a>
-          
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
           <div
             className="collapse justify-content-center navbar-collapse"
             id="navbarTogglerDemo03"
@@ -67,26 +77,23 @@ const Navbar = () => {
                   <></>
                 )}
               </li>
+              <li>
+              <div className="nav-connect d-lg-none">
+                <AnchorLink className="anchor-link " offset={50} href="#contact">
+                  Connect With Me
+                </AnchorLink>
+              </div>
+              </li>
             </ul>
           </div>
-          <div className="d-flex " id="right">
+          <div className="d-none d-lg-flex  " id="right">
             <div className="nav-connect">
               <AnchorLink className="anchor-link" offset={50} href="#contact">
                 Connect With Me
               </AnchorLink>
             </div>
           </div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
+         
         </div>
       </nav>
   )
