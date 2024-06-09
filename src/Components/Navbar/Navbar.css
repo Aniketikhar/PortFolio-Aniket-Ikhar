@@ -1,0 +1,49 @@
+
+
+.navigation{
+    background-color: #2020207c;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+    
+
+}
+
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+.anchor-link p {
+    margin-bottom: 0px !important;
+}
+
+
+.nav-connect{
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(221deg,#d40aab,#d10000,#f9581f,#1459f3,#217e93);
+    background-size: 300% 300%;
+    animation: gradient-animation 25s ease infinite;
+  }
+  
+  
+
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
