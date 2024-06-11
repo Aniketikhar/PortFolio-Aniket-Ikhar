@@ -6,7 +6,7 @@ import about_img from "../../assets/about-img.jpg";
 const About = () => {
   return (
     <div className="about container my-5 d-flex align-items-center flex-column">
-      <div className="about-title mb-4 ">
+      <div className="title mb-4 ">
         <h1>About Me</h1>
         <img src={theme_pattern} alt="" />
       </div>

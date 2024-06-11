@@ -22,3 +22,22 @@ body{
     background-position: 0% 50%;
   }
 }
+
+
+
+.title {
+  position: relative;
+}
+
+.title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
