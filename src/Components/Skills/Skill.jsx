@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skill.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import about_img from "../../assets/about-img.jpg";
+
 
 const Skill = () => {
   return (
