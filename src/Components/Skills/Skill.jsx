@@ -10,7 +10,7 @@ const Skill = () => {
         <img src={theme_pattern} alt="" />
       </div>
       <div className="row w-100 text-center ">
-        <div className="col-12 col-md-4">
+        <div className=" col-md-4">
           <div className="skill rounded-3 m-4 p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
               <h5>HTML & CSS</h5>
@@ -61,7 +61,7 @@ const Skill = () => {
           </div>
           
         </div>
-        <div className="col-12 col-md-4">
+        <div className=" col-md-4">
         
           <div className="skill rounded-3 m-4 p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
@@ -113,7 +113,7 @@ const Skill = () => {
           </div>
           
         </div>
-        <div className="col-12 col-md-4">
+        <div className=" col-md-4">
           <div className="skill rounded-3 m-4  p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
               <h5>NodeJS</h5>

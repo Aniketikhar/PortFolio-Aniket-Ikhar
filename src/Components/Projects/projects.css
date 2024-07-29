@@ -38,19 +38,16 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 20px;
+    overflow: hidden;
     align-items: flex-start;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   
-  .sliderContent h2 {
-    margin: 16px 0;
-  }
-  .sliderContent p {
-    margin: 0;
-    margin-bottom: 16px;
-  }
+  
   
   /* normal css  */
   
@@ -81,3 +78,5 @@
   .btns .btn:last-child {
     margin-left: 40px;
   }
+
+  

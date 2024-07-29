@@ -19,7 +19,7 @@ const Hero = () => {
             width={250}
           />
         </div>
-        <div className="hero-title m-4">
+        <div className="hero-title m-4 text-center">
           <h1>
             <span>I'm Aniket Ikhar</span>
           </h1>

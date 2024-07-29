@@ -118,10 +118,17 @@ const Projects = (props) => {
 const SliderContent = (props) => {
   return (
     <div className="sliderContent">
-      {props.icon}
-      <h2>{props.title}</h2>
-      <p>{props.desc}</p>
+      <div className="card p-0 bg-transparent border-0" style={{width: "100%"}}>
+        <img src={props.icon} className="card-img-top px-3 " alt="..." />
+        <div className="card-body">
+          <h6 className="card-title">{props.title}</h6>
+          <p className="card-text" style={{fontSize:"10px"}}>{props.desc}</p>
+          
+        </div>
+      </div>
+
     </div>
+    
   );
 };
 
