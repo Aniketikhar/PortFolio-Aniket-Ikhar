@@ -17,6 +17,7 @@
 
 .about-para {
     text-align: justify;
+    /* font-size: 20px; */
 }
 
 
@@ -29,7 +30,11 @@
     width: 150px;
  }
 
- .about-left img{
-    width: 250px;
+ .about-para{
+  /* font-size: 20px; */
  }
+
+ /* .about-left img{
+    width: 250px;
+ } */
 }

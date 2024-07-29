@@ -32,7 +32,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="container d-flex align-items-center flex-column py-5">
+    <div className="container d-flex align-items-center flex-column py-5" id="contact">
       <div className="title mb-4 ">
         <h1>Get In Touch</h1>
         <img src={theme_pattern} alt="" />
@@ -49,7 +49,7 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-detail d-flex m-3">
                 <img src={mail} alt="" />
-                <p className="ps-4">Aniketikhar88@gmail.com</p>
+                <p className="ps-4">aniketikhar2001@gmail.com</p>
               </div>
               <div className="contact-detail d-flex m-3">
                 <img src={call} alt="" className="pe-1" />
@@ -69,7 +69,7 @@ const Contact = () => {
                 name="name"
                 id="name "
                 placeholder="Enter your name"
-                className="form-control bg-dark text-light mb-3 mt-1"
+                className="form-control bg-dark text-light mb-3 mt-1 border-0"
               />
               <label htmlFor="">Your Email</label>
               <input
@@ -77,10 +77,10 @@ const Contact = () => {
                 name="email"
                 id="email "
                 placeholder="Enter your email"
-                className="form-control bg-dark text-light mb-3 mt-1"
+                className="form-control bg-dark text-light mb-3 mt-1 border-0"
               />
-              <label htmlFor="">write your message here</label>
-              <textarea name="message" id="message" rows="8" className="form-control bg-dark text-light mb-3 mt-1"></textarea>
+              <label htmlFor="">Write your message here</label>
+              <textarea name="message" id="message" rows="8" className="form-control bg-dark text-light mb-3 mt-1 border-0"></textarea>
               <button className="contact-submit" >Submit Now</button>
             </form>
           </div>

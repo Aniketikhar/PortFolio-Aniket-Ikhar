@@ -1,33 +1,126 @@
-import React from "react";
+import React, { useState } from "react";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import project_1 from "../../assets/project_1.svg";
 import "./projects.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronRight,
+  faChevronLeft
+} from "@fortawesome/free-solid-svg-icons";
 
-const Projects = () => {
+const Projects = (props) => {
+  const [activeSlide, setactiveSlide] = useState(props.activeSlide);
+
+  const next = () =>
+    activeSlide < props.data.length - 1 && setactiveSlide(activeSlide + 1);
+
+  const prev = () => activeSlide > 0 && setactiveSlide(activeSlide - 1);
+
+  const getStyles = (index) => {
+    if (activeSlide === index)
+      return {
+        opacity: 1,
+        transform: "translateX(0px) translateZ(0px) rotateY(0deg)",
+        zIndex: 10,
+      };
+    else if (activeSlide - 1 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(-240px) translateZ(-400px) rotateY(35deg)",
+        zIndex: 9,
+      };
+    else if (activeSlide + 1 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(240px) translateZ(-400px) rotateY(-35deg)",
+        zIndex: 9,
+      };
+    else if (activeSlide - 2 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
+        zIndex: 8,
+      };
+    else if (activeSlide + 2 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
+        zIndex: 8,
+      };
+    else if (index < activeSlide - 2)
+      return {
+        opacity: 0,
+        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
+        zIndex: 7,
+      };
+    else if (index > activeSlide + 2)
+      return {
+        opacity: 0,
+        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
+        zIndex: 7,
+      };
+  };
   return (
-    <div className="container d-flex align-items-center flex-column py-5">
-      <div className="title mb-4 ">
+    <div className="d-flex align-items-center flex-column py-5" id="project">
+      <div className="title mb-5 ">
         <h1>Projects</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="container">
-        <div className="row g-5">
-          <div className="col-12 col-md-6">
-            <img src={project_1} className="img-fluid" alt="" />
-          </div>
-          <div className="col-12 col-md-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sit at nostrum dolores amet soluta voluptatibus odio corrupti iste necessitatibus!
-          </div>
+      <div className="container-fluid">
+        {/* carousel */}
+        <div className="slideC">
+          {props.data.map((item, i) => (
+            <React.Fragment key={item.id}>
+              <div
+                className="slide"
+                style={{
+                  background: item.bgColor,
+                  boxShadow: `0 5px 20px ${item.bgColor}30`,
+                  ...getStyles(i),
+                }}
+              >
+                <SliderContent {...item} />
+              </div>
+              <div
+                className="reflection"
+                style={{
+                  background: `linear-gradient(to bottom, ${item.bgColor}40, transparent)`,
+                  ...getStyles(i),
+                }}
+              />
+            </React.Fragment>
+          ))}
         </div>
-        <div className="row g-5 my-4">
-          <div className="col-12 col-md-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam asperiores in aperiam dolorum corrupti amet ipsa. Ipsum eligendi voluptatum illum.
-          </div>
-          <div className="col-12 col-md-6">
-          <img src={project_1} className="img-fluid" alt="" />
+        {/* carousel */}
+
+        <div className="d-flex justify-content-center ">
+          <div className="btns">
+            <FontAwesomeIcon
+              className="btn fs-4"
+              onClick={prev}
+              icon={faChevronLeft}
+              color="#fff"
+              size="2x"
+            />
+            <FontAwesomeIcon
+              className="btn fs-4"
+              onClick={next}
+              icon={faChevronRight}
+              color="#fff"
+              size="2x"
+            />
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const SliderContent = (props) => {
+  return (
+    <div className="sliderContent">
+      {props.icon}
+      <h2>{props.title}</h2>
+      <p>{props.desc}</p>
     </div>
   );
 };
