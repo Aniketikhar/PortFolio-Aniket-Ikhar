@@ -43,13 +43,6 @@ export default [
     title: "Lorem Ipsum",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-  },
-  {
-    id: 5,
-    bgColor: "#FF616D",
-    icon: `<FontAwesomeIcon icon={faHelicopter} size="3x" />`,
-    title: "Lorem Ipsum",
-    desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
   }
+  
 ];
