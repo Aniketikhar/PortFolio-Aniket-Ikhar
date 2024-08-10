@@ -91,9 +91,9 @@ const Education = () => {
                         </div>
                       </div>
                       <div>
-                        <div className="title">Full Stack Developer</div>
+                        <div className="title">Full Stack Developer Intern</div>
                         <div className="caption">
-                          <p>ICEICO Technologies pvt ltd, Nagpur<br />
+                          <p>ICEICO Technologies Pvt Ltd, Nagpur<br />
                             Jan 2024 - June 2024
                             </p>
                           </div>
