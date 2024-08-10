@@ -11,9 +11,16 @@
 
 .progress-bar{
     background:  linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    
 }
 
 .skill:hover{
     transform: scale(1.08);
     
+}
+
+@media screen and (max-width: 500px){
+    .progress{
+        height: 10px;
+    }
 }

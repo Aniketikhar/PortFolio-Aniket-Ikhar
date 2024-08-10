@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skill.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
+import { skills } from "./Skills";
 
 const Skill = () => {
   return (
@@ -9,8 +10,34 @@ const Skill = () => {
         <h1>My Skills</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="row w-100 text-center ">
-        <div className=" col-md-4">
+      <div className="d-flex justify-content-center flex-wrap">
+        {
+          skills.map((skill, index) => (
+            <div key={index} className="col-6 col-md-4">
+              <div className="skill rounded-3 m-2 p-2 m-md-4 p-md-4 bg-dark shadow">
+                <div className="d-flex justify-content-between">
+                  <p className="fw-bold">{skill.skill}</p>
+                  <span>{skill.level}%</span>
+                </div>
+                <div className="progress">
+                  <div
+                    className="progress-bar bg-info"
+                    role="progressbar"
+                    style={{ width: skill.level + "%" }}
+                    aria-valuenow={skill.level}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+
+      {/* <div className="row w-100 text-center ">
+        <div className="col-6 col-md-4">
           <div className="skill rounded-3 m-4 p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
               <h5>HTML & CSS</h5>
@@ -61,7 +88,7 @@ const Skill = () => {
           </div>
           
         </div>
-        <div className=" col-md-4">
+        <div className="col-6 col-md-4">
         
           <div className="skill rounded-3 m-4 p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
@@ -113,7 +140,7 @@ const Skill = () => {
           </div>
           
         </div>
-        <div className=" col-md-4">
+        <div className="col-6 col-md-4">
           <div className="skill rounded-3 m-4  p-4 bg-dark shadow">
             <div className="d-flex justify-content-between">
               <h5>NodeJS</h5>
@@ -165,7 +192,7 @@ const Skill = () => {
           
           
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
