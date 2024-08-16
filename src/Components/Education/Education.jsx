@@ -7,7 +7,7 @@ const Education = () => {
     <>
       <div
         className="container d-flex align-items-center flex-column "
-        id="skills"
+        id="education"
       >
         <div className="title mb-4 ">
           <h1>Education</h1>
