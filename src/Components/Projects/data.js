@@ -10,14 +10,16 @@ import {
 import recipehub from "../../assets/recipesite-light.png";
 import crypto from "../../assets/cryptotracker.png";
 import novashop from "../../assets/novashop.png";
+import pixelpulse from "../../assets/pixelpulse.png";
+import dream from "../../assets/dreammusic.png";
 
 export default [
   {
     id: 1,
     bgColor: "rgb(40, 134, 40)",
-    icon: recipehub,
-    title: "RecipeHub",
-    url: "https://recipehub-nine.vercel.app/",
+    icon: dream,
+    title: "DreamMusic",
+    url: "https://dream-music-react-js.vercel.app/",
     desc:
       "RecipeHub is your ultimate destination for culinary inspiration and delicious creations. From quick and easy weeknight meals to gourmet delights for special occasions.",
   },
@@ -41,11 +43,12 @@ export default [
   },
   {
     id: 4,
-    bgColor: "#185ADB",
-    icon: `<FontAwesomeIcon icon={faFootballBall} size="3x" />`,
-    title: "Lorem Ipsum",
+    bgColor: "rgb(230, 71, 71)",
+    icon: pixelpulse,
+    title: "PixelPulse",
+    url: "https://pixel-pulse-three.vercel.app/",
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      "PixelPulse transforms text into a captivating visual experience. Watch as characters flow seamlessly across a dynamic grid, with each letter rendered as a pixelated pattern. "
   }
   
 ];
