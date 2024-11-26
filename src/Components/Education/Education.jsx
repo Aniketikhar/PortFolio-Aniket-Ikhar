@@ -21,10 +21,10 @@ const Education = () => {
                   <div className="Scriptcontent">
                   <h3 className="pb-4">Education</h3>
                     {/* Stepper HTML */}
-                    <div className="step step-active">
+                    <div className="step">
                       <div>
                         <div className="circle">
-                          <i className="fa fa-check" />
+                          <div className="circle">4</div>
                         </div>
                       </div>
                       <div>
@@ -92,6 +92,21 @@ const Education = () => {
                       </div>
                       <div>
                         <div className="title">Full Stack Developer Intern</div>
+                        <div className="caption">
+                          <p>HB Gadget Solutions & Technologies Pvt Ltd, Nagpur<br />
+                            August 2024 - Present
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div className="step">
+                      <div>
+                        <div className="circle">
+                          <div className="circle">1</div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="title">Web Developer Intern</div>
                         <div className="caption">
                           <p>ICEICO Technologies Pvt Ltd, Nagpur<br />
                             Jan 2024 - June 2024

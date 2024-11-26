@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profile_img from "../../assets/profile-img.png";
+import profile_img from "../../assets/aniketPhotoJpg.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { ReactTyped } from "react-typed";
 
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="profile-img">
           <img
             src={profile_img}
-            className=" rounded-circle"
+            style={{borderEndEndRadius: "20px", borderTopLeftRadius: "20px", borderTopRightRadius: "60px", borderBottomLeftRadius: "80px"}}
             alt=""
             width={250}
           />

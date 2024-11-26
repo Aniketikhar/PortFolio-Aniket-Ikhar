@@ -120,7 +120,6 @@ const Projects = (props) => {
 const SliderContent = (props) => {
   return (
     <div className="sliderContent">
-      
       <a href={props.url} target="blank" className="text-decoration-none">
         <div
           className="card p-0 bg-transparent border-0"
