@@ -84,21 +84,7 @@ const Education = () => {
                   <div className="Scriptcontent">
                     <h3 className="pb-4">Experience</h3>
                     {/* Stepper HTML */}
-                    <div className="step step-active">
-                      <div>
-                        <div className="circle">
-                          <i className="fa fa-check" />
-                        </div>
-                      </div>
-                      <div>
-                        <div className="title">Full Stack Developer Intern</div>
-                        <div className="caption">
-                          <p>HB Gadget Solutions & Technologies Pvt Ltd, Nagpur<br />
-                            August 2024 - Present
-                            </p>
-                          </div>
-                      </div>
-                    </div>
+                    
                     <div className="step">
                       <div>
                         <div className="circle">
