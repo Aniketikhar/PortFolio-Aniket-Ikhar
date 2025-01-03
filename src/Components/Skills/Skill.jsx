@@ -2,6 +2,8 @@ import React from "react";
 import "./Skill.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import { skills } from "./Skills";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../varients";
 
 const Skill = () => {
   return (
@@ -10,7 +12,12 @@ const Skill = () => {
         <h1>My Skills</h1>
         <img src={theme_pattern} alt="" />
       </div>
-      <div className="d-flex justify-content-center flex-wrap">
+      <motion.div 
+      variants={fadeIn("up", 0.9)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.9 }}
+      className="d-flex justify-content-center flex-wrap">
         {
           skills.map((skill, index) => (
             <div key={index} className="col-6 col-md-4">
@@ -33,7 +40,7 @@ const Skill = () => {
             </div>
           ))
         }
-      </div>
+      </motion.div>
 
 
       {/* <div className="row w-100 text-center ">

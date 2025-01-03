@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import about_img from "../../assets/about-img.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../varients";
 
 const About = () => {
   return (
@@ -15,10 +17,20 @@ const About = () => {
       </div>
       <div className="container">
         <div className="row my-1 g-5">
-          <div className="col-12 col-md-6 about-left text-center ">
+          <motion.div 
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.9 }}
+          className="col-12 col-md-6 about-left text-center ">
             <img src={about_img} alt="" className="img-fluid" />
-          </div>
-          <div className="col-12 col-md-6">
+          </motion.div>
+          <motion.div 
+          variants={fadeIn("left", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.9 }}
+          className="col-12 col-md-6">
             <div className="about-para text-justify ">
               <p>
                 I recently completed my Master of Computer Applications (MCA)
@@ -49,7 +61,7 @@ const About = () => {
                 </ul>
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
